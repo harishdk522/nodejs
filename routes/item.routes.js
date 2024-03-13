@@ -9,7 +9,4 @@ module.exports = app => {
     router.get("/", UserMiddleware.user, items.findAll);
   
     router.delete("/", UserMiddleware.admin, items.deleteAll);
-    
-
-    router.delete("/:id", UserMiddleware.admin, items.delete);
 };
