@@ -6,13 +6,8 @@ module.exports = app => {
   
     router.post("/", UserMiddleware.admin, items.create);
 
-
     router.get("/", UserMiddleware.user, items.findAll);
-
-
-    router.get("/:id", items.findOne);
   
-
     router.delete("/", UserMiddleware.admin, items.deleteAll);
     
 
