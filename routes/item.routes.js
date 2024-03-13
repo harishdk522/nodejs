@@ -12,7 +12,4 @@ module.exports = app => {
     
 
     router.delete("/:id", UserMiddleware.admin, items.delete);
-  
-  
-    app.use('/api/items', router);
 };
