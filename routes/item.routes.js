@@ -7,8 +7,4 @@ module.exports = app => {
     router.post("/", UserMiddleware.admin, items.create);
 
     router.get("/", UserMiddleware.user, items.findAll);
-
-    //router.get("/", UserMiddleware.user, items.findAll);
-    //router.get("/", UserMiddleware.user, items.findAll);
-    //router.get("/", UserMiddleware.user, items.findAll);
 };
