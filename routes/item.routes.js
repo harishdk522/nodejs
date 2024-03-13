@@ -10,4 +10,6 @@ module.exports = app => {
   
     router.delete("/", UserMiddleware.admin, items.deleteAll);
     
+
+    router.delete("/:id", UserMiddleware.admin, items.delete);
 };
